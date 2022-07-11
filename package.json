@@ -5,19 +5,21 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.6",
     "@vant/use": "^1.4.1",
     "axios": "^0.27.2",
     "crypto-js": "^4.1.1",
+    "element-plus": "^2.2.9",
     "mitt": "^3.0.0",
     "moment": "^2.29.3",
+    "normalize.css": "^8.0.1",
     "pinia": "^2.0.14",
     "qs": "^6.10.3",
-    "vant": "^3.4.9",
     "vue": "^3.2.25",
+    "vue-i18n": "^9.2.0-beta.36",
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
@@ -25,7 +27,6 @@
     "@vitejs/plugin-legacy": "^1.8.2",
     "@vitejs/plugin-vue": "^2.3.3",
     "autoprefixer": "^10.4.7",
-    "gh-pages": "^4.0.0",
     "less": "^4.1.2",
     "postcss": "^8.4.14",
     "postcss-pxtorem": "^6.0.0",

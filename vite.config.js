@@ -77,6 +77,11 @@ export default defineConfig({
             {
                 find: "@",
                 replacement: path.resolve(__dirname, "./src"),
+            },
+            // vue3使用vue-i18n的时候会条警告信息，解决方法如下
+            {
+                find: "vue-i18n",
+                replacement: "vue-i18n/dist/vue-i18n.cjs.js",
             }
         ],
     },
