@@ -6,6 +6,17 @@ export default {
 
     road_map: 'Road Map',
 
+    unopened: 'UNOPENED',
+    snap_up_now: 'Snap Up Now',
+    remaining: "remaining",
+    sheets: "sheets",
+    quarter1: "QUARTER 1",
+    quarter2: "QUARTER 2",
+    quarter3: "QUARTER 3",
+    quarter4: "QUARTER 4",
+    quarter5: "QUARTER 5",
+    quarter6: "QUARTER 6",
+
     pieces: "Pieces",
     my_team: "My Team",
     team_person_count: "Team person count",

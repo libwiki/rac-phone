@@ -6,6 +6,17 @@ export default {
 
     road_map: '路线图',
 
+    unopened: '暂未开放',
+    snap_up_now: '立即抢购',
+    remaining: "剩余",
+    sheets: "张",
+    quarter1: "第一季",
+    quarter2: "第二季",
+    quarter3: "第三季",
+    quarter4: "第四季",
+    quarter5: "第五季",
+    quarter6: "第六季",
+
     pieces: "枚",
     my_team: "我的团队",
     team_person_count: "伞下团队人数",

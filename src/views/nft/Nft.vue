@@ -7,9 +7,9 @@ import {px2rem} from "../../utils/helpers";
   <div class="col-flex-center">
     <div class="col-flex-center tw-w-full tw-max-w-md">
       <div class="tw-text-30 tw-leading-40">
-        第一季
+        {{ $t('quarter1') }}
       </div>
-      <div class="tw-text-light tw-text-14 tw-leading-40">剩余50张</div>
+      <div class="tw-text-light tw-text-14 tw-leading-40">{{ $t('remaining') }} 50 {{ $t('sheets') }}</div>
       <div>
         <Carousel3d
             :border="0"
@@ -50,14 +50,14 @@ import {px2rem} from "../../utils/helpers";
           1000USDT
         </div>
         <ElButton type="danger">
-          立即抢购
+          {{ $t('snap_up_now') }}
         </ElButton>
       </div>
     </div>
 
     <div class=" tw-w-full tw-max-w-md col-flex-center tw-pt-20">
       <div class="tw-text-30 tw-leading-40">
-        第二季
+        {{ $t('quarter2') }}
       </div>
       <div>
         <Carousel3d
@@ -98,7 +98,7 @@ import {px2rem} from "../../utils/helpers";
       </div>
       <div class="tw-py-10">
         <ElButton disabled>
-          暂未开放
+          {{ $t('unopened') }}
         </ElButton>
       </div>
     </div>
