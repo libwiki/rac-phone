@@ -22,7 +22,7 @@ export default {
     baseUrl: getBaseUrl(), // 请求的服务器api接口基础url
     wxAppId: import.meta.env.VITE_WX_APP_ID, // 微信公众号appId
     version: import.meta.env.VITE_VERSION || '1.0.0', // 当前版本号（暂未有实际用处）
-    siteName: import.meta.env.VITE_SITE_NAME || 'vue3-vant-template', // 当前网站名称
+    siteName: import.meta.env.VITE_SITE_NAME || 'BuryDAO', // 当前网站名称
     homeRouteName: import.meta.env.VITE_HOME_NAME || 'home', // 首页的路由名称
     loginRouteName: import.meta.env.VITE_LOGIN_NAME || 'login', // 登录页的路由名称
 };

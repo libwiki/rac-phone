@@ -1,7 +1,10 @@
 export default {
     home: "Home",
-    ivo: "IVO",
-    account: "My Account",
-    dashboard: "Dashboard",
+    nft: "NFT",
+    pledge: "Pledge",
+    team: "Team",
+    show_venue: "ShowVenue",
+    lease: "Lease",
+    transaction: "Transaction",
     white_paper: "WhitePaper",
 }
