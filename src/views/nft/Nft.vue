@@ -6,10 +6,14 @@ import {px2rem} from "../../utils/helpers";
 <template>
   <div class="col-flex-center">
     <div class="col-flex-center tw-w-full tw-max-w-md">
-      <div class="tw-text-30 tw-leading-40">
-        {{ $t('quarter1') }}
+      <div class="quarter-box">
+        <div class="title">
+          {{ $t('quarter1') }}
+        </div>
+        <div class="sheets">
+          {{ $t('remaining_sheets', {sheets: 50}) }}
+        </div>
       </div>
-      <div class="tw-text-light tw-text-14 tw-leading-40">{{ $t('remaining') }} 50 {{ $t('sheets') }}</div>
       <div>
         <Carousel3d
             :border="0"
@@ -41,7 +45,7 @@ import {px2rem} from "../../utils/helpers";
           </Slide>
         </Carousel3d>
       </div>
-      <div class="tw-text-dark">
+      <div class="">
         The a card ,nicknamed "Junyi Gongzi" is first with strong strength and high appearance, and each piece
         produces 1,000 tokens
       </div>
@@ -49,15 +53,25 @@ import {px2rem} from "../../utils/helpers";
         <div class="tw-text-red-400 tw-text-center tw-leading-25">
           1000USDT
         </div>
-        <ElButton type="danger">
+        <!--<ElButton type="danger">-->
+        <!--  {{ $t('snap_up_now') }}-->
+        <!--</ElButton>-->
+        <div class="buy-btn">
           {{ $t('snap_up_now') }}
-        </ElButton>
+        </div>
       </div>
     </div>
 
+    <div class="tw-w-full tw-py-20 dr"></div>
+
     <div class=" tw-w-full tw-max-w-md col-flex-center tw-pt-20">
-      <div class="tw-text-30 tw-leading-40">
-        {{ $t('quarter2') }}
+      <div class="quarter-box">
+        <div class="title">
+          {{ $t('quarter2') }}
+        </div>
+        <div class="sheets">
+          {{ $t('unopened') }}
+        </div>
       </div>
       <div>
         <Carousel3d
@@ -92,7 +106,7 @@ import {px2rem} from "../../utils/helpers";
           </Slide>
         </Carousel3d>
       </div>
-      <div class="tw-text-dark">
+      <div class="">
         The a card ,nicknamed "Junyi Gongzi" is first with strong strength and high appearance, and each piece
         produces 1,000 tokens
       </div>
@@ -107,6 +121,47 @@ import {px2rem} from "../../utils/helpers";
 
 
 <style lang="less" scoped>
+.dr {
+  background: url("../../assets/rac/dr.png") no-repeat;
+  background-size: 100% auto;
+  height: 15px;
+}
+
+.buy-btn {
+  background: url("../../assets/rac/button1.5dae442c.png") no-repeat;
+  background-size: 100% 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  min-width: 200px;
+  width: auto;
+  color: #ffffff;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.quarter-box {
+  background: url("../../assets/rac/money.bc9d3fdd.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+
+  .title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .sheets {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffc925;
+  }
+}
+
 .c-item {
   .c-image-box {
     width: 100%;

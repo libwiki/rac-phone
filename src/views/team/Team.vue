@@ -46,7 +46,7 @@ const tabsData = reactive({
         </div>
       </div>
     </div>
-    <div class="col-flex-center tw-w-full tw-max-w-md tw-text-10 tw-bg-gray-50 tw-py-10 tw-px-10">
+    <div class="col-flex-center tw-w-full tw-max-w-md tw-text-10 tw-py-10 tw-px-10">
       <div
           class="flex-row tw-justify-between tw-w-full tw-mb-10 rect-box">
         <div>{{ $t('total_income') }}（Bury）</div>
@@ -73,7 +73,7 @@ const tabsData = reactive({
       </div>
     </div>
 
-    <div class="tw-w-full tw-max-w-md tw-text-10 tw-pb-20">
+    <div class="tw-w-full tw-max-w-md tw-text-10 tw-pb-20 footer-box">
       <el-tabs v-model="tabsData.index">
         <el-tab-pane v-for="(item,i) of tabsData.data" :name="i" :key="i">
           <template #label>
@@ -103,4 +103,12 @@ const tabsData = reactive({
   border-radius: 50%;
   padding: 5px;
 }
+
+.footer-box {
+  background: url("../../assets/rac/border2.0c5acd3a.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 10px 20px;
+  padding-bottom: 40px;
+}
+
 </style>

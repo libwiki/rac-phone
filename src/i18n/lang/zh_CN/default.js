@@ -4,11 +4,17 @@ export default {
     zh_CN: '简体中文',
     en_US: 'English',
 
+    video_introduction: '视频简介',
     road_map: '路线图',
+
+    limited_quantity:'数量有限',
+    free_receive:'免费领取',
 
     unopened: '暂未开放',
     snap_up_now: '立即抢购',
     remaining: "剩余",
+    remaining_count:'剩余数量{count}枚',
+    remaining_sheets:'剩余数量{sheets}张',
     sheets: "张",
     quarter1: "第一季",
     quarter2: "第二季",
@@ -16,6 +22,8 @@ export default {
     quarter4: "第四季",
     quarter5: "第五季",
     quarter6: "第六季",
+
+    meta_universe_ecological_platform: '元宇宙生态平台',
 
     pieces: "枚",
     my_team: "我的团队",

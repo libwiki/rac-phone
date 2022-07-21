@@ -4,18 +4,27 @@ export default {
     zh_CN: '简体中文',
     en_US: 'English',
 
+    video_introduction: 'VIDEO',
     road_map: 'Road Map',
+
+    limited_quantity: 'LIMITED',
+    free_receive: 'Free Receive',
 
     unopened: 'UNOPENED',
     snap_up_now: 'Snap Up Now',
     remaining: "remaining",
-    sheets: "sheets",
+    remaining_count: 'Remaining {count} Pieces',
+    remaining_sheets: 'Remaining {sheets} Sheets',
+    sheets: "Sheets",
     quarter1: "QUARTER 1",
     quarter2: "QUARTER 2",
     quarter3: "QUARTER 3",
     quarter4: "QUARTER 4",
     quarter5: "QUARTER 5",
     quarter6: "QUARTER 6",
+
+
+    meta_universe_ecological_platform: 'META UNIVERSE ECOLOGICAL PLATFORM',
 
     pieces: "Pieces",
     my_team: "My Team",

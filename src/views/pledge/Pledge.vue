@@ -41,12 +41,12 @@ import logoImg from "../../assets/logo.04179b1c.png"
         </Carousel3d>
       </div>
       <div class="tw-py-10">
-        <ElButton>
+        <div class="pledge-btn">
           {{ $t('immediate_pledge') }}
-        </ElButton>
+        </div>
       </div>
     </div>
-    <div class="col-flex-center tw-w-full tw-max-w-md tw-text-10 tw-bg-gray-50 tw-py-10 tw-px-10">
+    <div class="col-flex-center tw-w-full tw-max-w-md tw-text-10 tw-py-10 tw-px-10">
       <div
           class="flex-row tw-justify-between tw-w-full tw-mb-10 rect-box">
         <div>{{ $t('total_income') }}（Bury）</div>
@@ -76,6 +76,20 @@ import logoImg from "../../assets/logo.04179b1c.png"
 </template>
 
 <style lang="less" scoped>
+
+.pledge-btn {
+  background: url("../../assets/rac/button2.94d0af22.png") no-repeat;
+  background-size: 100% 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  min-width: 120px;
+  width: auto;
+  color: #ffffff;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
 .c-item {
   .c-image-box {
     width: 100%;

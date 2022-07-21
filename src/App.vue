@@ -100,6 +100,7 @@ const handleSelect = (key) => {
                 :default-active="menuData.index"
                 class="menu"
                 mode="horizontal"
+                text-color="#ffffff"
                 :ellipsis="false"
                 @select="handleSelect">
               <template v-for="item of menuData.data">
@@ -129,19 +130,19 @@ const handleSelect = (key) => {
           <!--顶部工具栏 start-->
           <div class="tw-pr-20 flex-row tw-items-center">
             <el-icon class="tw-mx-3" :size="px2rem(20)">
-              <WalletFilled class="tw-text-dark tw-cursor-pointer"/>
+              <WalletFilled class="tw-cursor-pointer"/>
             </el-icon>
             <el-icon
                 @click="menuData.langDrawer=!menuData.langDrawer"
                 class="tw-mx-3" :size="px2rem(20)">
-              <Promotion class="tw-text-dark tw-cursor-pointer"/>
+              <Promotion class="tw-cursor-pointer"/>
             </el-icon>
             <el-icon
                 class="tw-mx-3"
                 @click="menuData.drawer=!menuData.drawer"
                 v-if="!mediaQueryStore.isPc"
                 :size="px2rem(20)">
-              <Fold class="tw-text-dark tw-cursor-pointer"/>
+              <Fold class="tw-cursor-pointer"/>
             </el-icon>
           </div>
           <!--顶部工具栏 end-->
@@ -154,7 +155,11 @@ const handleSelect = (key) => {
     </el-container>
 
     <!--竖向菜单 start-->
-    <el-drawer :size="250" direction="ltr" v-model="menuData.drawer" :with-header="false">
+    <el-drawer
+        :size="250"
+        direction="ltr"
+        v-model="menuData.drawer"
+        :with-header="false">
       <el-menu
           :default-active="menuData.index"
           class="menu"
@@ -212,28 +217,35 @@ const handleSelect = (key) => {
 
 
 .app-container-box {
-  //background-color: #000234;
+  background: #040A10 url("./assets/rac/bg.95269d7d.png") no-repeat;
+  background-position: 50% 0;
+  background-size: 100% 100%;
+  color: #ffffff;
+  width: 100vw;
+  min-height: 100vh;
 
-
-  .ivo-bg {
-    position: fixed;
-    //background-image: url("./bg.7231cad2.png");
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100vw;
-    height: 100vh;
-  }
+  //.ivo-bg {
+  //  position: fixed;
+  //  background-image: url("./bg.95269d7d.png");
+  //  background-position: 50%;
+  //  background-repeat: no-repeat;
+  //  background-size: 100%;
+  //  z-index: -1;
+  //  width: 100vw;
+  //  min-height: 100vh;
+  //  color: #ffffff;
+  //}
 
 
   .header {
     position: sticky;
     top: 0;
     //background-color: rgba(52, 73, 132, .83);
-    background-color: #ffffff;
+    background-color: #081428;
+    //background-color: #ffffff;
     -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    box-shadow: 1px 1px 1px #f0f2f5;
+    //backdrop-filter: blur(8px);
+    //box-shadow: 1px 1px 1px #f0f2f5;
     z-index: 999;
 
     .logo-box {
@@ -247,6 +259,7 @@ const handleSelect = (key) => {
     border: none;
     height: var(--el-menu-item-height);
     background-color: transparent;
+
 
     .menu-item, .dropdown-item {
       font-size: 10px;
